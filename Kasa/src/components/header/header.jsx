@@ -5,7 +5,7 @@ function Header() {
           <nav>
             <ul>
                 <li>Acceuil</li>
-                <li>A propos</li>
+                <li>A proposs</li>
             </ul>
           </nav>
         </header>
