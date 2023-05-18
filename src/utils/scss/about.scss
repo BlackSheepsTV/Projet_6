@@ -1,0 +1,53 @@
+@use './variables' as v;
+
+.about-menu-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .menu {
+        width: 100%;
+        padding: 8px 12px;
+        background-color: v.$rose;
+        border-radius: 5px;
+        z-index: 10;
+
+        p {
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    > p {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: v.$gray;
+        padding: 50px 12px;
+        border-radius: 5px;
+    }
+}
+
+.az {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+    .about-menu-wrapper {
+        width: 80%;
+
+        > p {
+            padding-bottom: 6px;
+        }
+    }
+}
