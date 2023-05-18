@@ -19,12 +19,20 @@
     }
 
     p {
+        max-width: 140px;
         font-size: 18px;
         color: white;
-        margin-left: 20px;
+        margin: 0 20px;
         padding: 0px 10px;
         border-radius: 10px;
         z-index: 10;
         background-color: rgba( 0, 0, 0, 0.6);
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-wrapper {
+        width: 31%;
+        margin-bottom: 50px;
     }
 }

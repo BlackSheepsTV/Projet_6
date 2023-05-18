@@ -8,9 +8,12 @@ export default function Home() {
         <div className="home-header">
           <p>Chez vous, partout et ailleurs</p>
         </div>
-        {Logements.map((logement, index ) => (
-          <Card key={index} img={logement.cover} location={logement.location} />
-        ))}
+        <div className='cards-wrapper'>
+          {Logements.map((logement, index ) => (
+            <Card key={index} img={logement.cover} location={logement.location} />
+          ))}
+        </div>
+        
         
       </>
   );

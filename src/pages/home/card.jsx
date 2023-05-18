@@ -6,7 +6,7 @@ export default function Card({ img, location}) {
         <div className="card-wrapper">
             <img src={img} alt="Photo de logement" />
             <p>{location}</p>
-        </div>
+        </div> 
     )   
 }
 
