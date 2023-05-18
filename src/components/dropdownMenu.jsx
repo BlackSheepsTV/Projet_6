@@ -1,4 +1,4 @@
-import "../utils/scss/about.scss"
+import "../utils/scss/dropdown.scss"
 import PropTypes from 'prop-types';
 
 export default function DropdownMenu({ title, text }) {
