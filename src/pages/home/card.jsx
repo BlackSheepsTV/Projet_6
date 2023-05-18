@@ -13,4 +13,4 @@ export default function Card({ img, location}) {
 Card.propTypes = {
     img: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-  };
+};
