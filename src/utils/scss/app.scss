@@ -28,10 +28,13 @@ html,body {
 }
 
 main {
+    width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+    padding: 0 20px;
 }
 
 ul {
@@ -49,4 +52,11 @@ a {
 
 .nav-active {
     text-decoration: underline;
+}
+
+@media (min-width: 580px) {
+    main {
+        padding: 0 100px;
+        background-color: red;
+    }
 }
