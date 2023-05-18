@@ -6,8 +6,8 @@ import { Logements }  from "../../data/logement.js"
 export default function Home() {
   return (
       <>
-        <HomeHeader />
-        
+        <HomeHeader text="Chez vous, partout et ailleurs"/>
+
         <div className='cards-wrapper'>
           {Logements.map((logement, index ) => (
             <Card key={index} img={logement.cover} location={logement.location} />
