@@ -1,15 +1,32 @@
 @use './variables' as v;
 
-.about-menu-wrapper {
+.about-menus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-wrapper {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    background-color: v.$gray;
+    padding: 50px 12px;
+    border-radius: 5px;
 
-    .menu {
+    .dropdown-title {
+        position: absolute;
+        top: 0;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 8px 12px;
         background-color: v.$rose;
         border-radius: 5px;
@@ -23,35 +40,23 @@
     }
 
     > p {
-        position: absolute;
         width: 100%;
-        top: 0;
         font-size: 12px;
         font-weight: 400;
-        background-color: v.$gray;
-        padding: 50px 12px;
-        border-radius: 5px;
     }
 }
 
-.az {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 @media (min-width: 1000px) {
-    .about-menu-wrapper {
+    .dropdown-wrapper {
         width: 80%;
+        padding: 60px 18px 6px;
 
         > p {
             padding-bottom: 6px;
             font-size: 24px;
         }
 
-        .menu {
+        .dropdown-title {
 
             p {
                 font-size: 24px;
