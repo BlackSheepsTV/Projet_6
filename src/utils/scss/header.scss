@@ -1,9 +1,14 @@
 header {
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    img {
+        width: 120px;
+        height: auto;
+    }
 
     ul {
         display: flex;
@@ -24,7 +29,11 @@ header {
 
 @media (min-width: 1000px) {
     header {
-        padding: 0 100px;
+        padding: 20px 100px;
+
+        img {
+            width: 180px;
+        }
 
         ul {
             li {
