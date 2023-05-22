@@ -35,6 +35,38 @@ main {
     align-items: center;
     flex: 1;
     padding: 0 20px;
+
+    .page-header {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0px 16px;
+        border-radius: 10px;
+        background-color: gray;
+        color: white;
+        font-size: 24px;
+        text-align: left;
+        line-height: 24px;
+        overflow: hidden;
+
+        p {
+            z-index: 10;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: brightness(60%);
+            object-fit: cover;
+        }
+    }
 }
 
 h1,h2,h3,p,a {
@@ -61,5 +93,16 @@ a {
 @media (min-width: 1000px) {
     main {
         padding: 0 100px;
+
+        .page-header {
+            height: 180px;
+            justify-content: center;
+            margin-bottom: 40px;
+            border-radius: 25px;
+
+            p {
+                font-size: 40px;
+            }
+        }
     }
 }
