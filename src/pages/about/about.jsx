@@ -1,4 +1,4 @@
-import "../../utils/scss/dropdown.scss"
+import "../../utils/scss/about.scss"
 import HomeHeader from "../../components/page-header/page-header";
 import DropdownMenu from "../../components/dropdownMenu.jsx";
 import  { menus } from "../../data/about.js"

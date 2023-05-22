@@ -1,0 +1,14 @@
+.about-menus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 1000px) {
+    .about-menus {
+        gap: 30px;
+    }
+}
