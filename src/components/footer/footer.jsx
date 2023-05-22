@@ -1,9 +1,10 @@
 import '../../utils/scss/footer.scss'
+import logo from '../../assets/logo_footer.svg';
 
 export default function Footer () {
     return (
         <footer>
-            <h2>Kasa</h2>
+            <img src={logo} alt="logo kasa" />
             <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     );
