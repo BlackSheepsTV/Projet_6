@@ -1,8 +1,8 @@
-import "../utils/scss/dropdown.scss"
+import "../../utils/scss/dropdown.scss"
 import { useState } from "react";
 import PropTypes from 'prop-types';
-import arrowDown from '../assets/arrowDown.svg'
-import arrowUp from '../assets/arrowUp.svg'
+import arrowDown from '../../assets/arrowDown.svg'
+import arrowUp from '../../assets/arrowUp.svg'
 
 export default function DropdownMenu({ title, text }) {
 
