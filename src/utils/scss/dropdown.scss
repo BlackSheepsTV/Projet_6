@@ -29,7 +29,7 @@
         }
     }
 
-    > p {
+    > p,ul {
         width: 100%;
         background-color: v.$gray;
         margin-top: -6px;
@@ -38,14 +38,29 @@
         font-size: 12px;
         font-weight: 400;
     }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 20px 12px 4px;
+
+        li {
+            font-size: 12px;
+        }
+    }
 }
 
 @media (min-width: 1000px) {
     .dropdown-wrapper {
 
-        > p {
+        > p, ul {
             padding: 27px 12px 6px;
             font-size: 24px;
+        }
+
+        ul li {
+            font-size: 18px;
         }
 
         .dropdown-title {
