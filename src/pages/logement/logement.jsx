@@ -4,20 +4,14 @@ import { Logements }  from "../../data/logement.js"
 import LogementGallery from '../../components/logementGallery/logementGallery'
 import TagName from '../../components/tagName/tagName';
 import Stars from '../../components/stars/stars';
+import DropDownMenu from '../../components/dropdownMenu/dropdownMenu.jsx'
 import NotFound from "../notFound";
-import { useEffect } from 'react';
 
 export default function Logement() {
 
     const params = useParams();
 
     const logement = Logements.find((logement) =>  logement.title.replace(/[\s-]+/g, '-').toLowerCase() === params.logementName.replace(/[\s-]+/g, '-').toLowerCase());
-
-    useEffect(() => {
-       logement.tags.map((tag) => (
-             console.log(tag)
-        ))
-    }, [])
 
     if(!logement) {
         return <NotFound />
@@ -50,6 +44,11 @@ export default function Logement() {
                         </div>
 
                 </div>
+            </div>
+
+            <div className='logement-dropdown-wrapper'>
+                <DropDownMenu  title='Description' text={logement.description} />
+                <DropDownMenu  title='Équipements' array={logement.equipments} />
             </div>
 
 
