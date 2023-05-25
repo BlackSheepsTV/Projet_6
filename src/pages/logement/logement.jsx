@@ -36,7 +36,7 @@ export default function Logement() {
                 </div>
                 
                 <div className='header-bottom'> 
-                        <Stars />
+                        <Stars rate={parseInt(logement.rating)} />
 
                         <div className='host-wrapper'>
                             <p>{logement.host.name}</p>
