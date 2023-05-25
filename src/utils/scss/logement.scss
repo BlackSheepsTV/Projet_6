@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 16px;
 
     .title-wrapper {
 
@@ -58,10 +59,24 @@
             }
         }
     }
+
+    
+}
+
+.logement-dropdown-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
 }
 
 @media (min-width: 1000px) {
     .logement-header-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
 
         .title-wrapper {
             h1 {
@@ -76,6 +91,10 @@
         }
 
         .header-bottom {
+            width: auto;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            gap: 26px;
 
             .host-wrapper {
                 
@@ -86,6 +105,29 @@
                 img {
                     width: 64px;
                     height: 64px;
+                }
+            }
+        }
+    }
+
+    .logement-dropdown-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 76px;
+
+        .dropdown-wrapper {
+            > p {
+                font-size: 18px;
+            }
+
+            .dropdown-title {
+
+                p {
+                    font-size: 18px;
+                }
+
+                img {
+                    font-size: 18px;
                 }
             }
         }
