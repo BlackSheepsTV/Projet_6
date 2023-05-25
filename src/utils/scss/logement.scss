@@ -37,15 +37,13 @@
 
         .host-wrapper {
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
+            gap: 6px;
 
             p {
-                width: 40px;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                overflow: hidden;
+                width: 40%;
+                display: flex;
                 font-size: 12px;
             }
 
@@ -75,7 +73,7 @@
     .logement-header-wrapper {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 36px;
 
         .title-wrapper {
@@ -93,13 +91,15 @@
         .header-bottom {
             width: auto;
             flex-direction: column-reverse;
-            justify-content: flex-end;
+            align-items: flex-end;
             gap: 26px;
 
             .host-wrapper {
+                gap: 10px;
                 
                 p {
-                    font-size: 18px;
+                    width: 35%;
+                    font-size: 18px;                    
                 }
 
                 img {
