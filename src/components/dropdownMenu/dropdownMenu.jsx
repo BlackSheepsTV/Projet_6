@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import arrowDown from '../../assets/arrowDown.svg'
 import arrowUp from '../../assets/arrowUp.svg'
 
-export default function DropdownMenu({ title, text }) {
+export default function DropdownMenu({ title, text, array }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -19,12 +19,21 @@ export default function DropdownMenu({ title, text }) {
 
           )}
         </div>
-        {isOpen && <p>{text}</p> }
+        {isOpen && text && ( <p>{text}</p>)}
+
+        {isOpen && array && (
+          <ul>
+            {array.map((txt, index) => (
+              <li key={index}>{txt}</li>
+             ))}
+          </ul>
+        )}  
       </div>
   );
 }
 
 DropdownMenu.propTypes = {
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    text: PropTypes.string,
+    array: PropTypes.array,
 };
