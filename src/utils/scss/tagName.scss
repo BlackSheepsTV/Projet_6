@@ -1,0 +1,18 @@
+.tagName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 30px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: #FF6060;
+    color: white;
+    white-space: nowrap;
+}
+
+@media (min-width: 1000px) {
+    .tagName {
+        padding: 4px 35px;
+        font-size: 14px;
+    }
+}
