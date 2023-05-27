@@ -113,12 +113,18 @@
 
     .logement-dropdown-wrapper {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 76px;
 
         .dropdown-wrapper {
+            justify-content: flex-start;
+           
             > p {
                 font-size: 18px;
+            }
+
+            p,ul {
+                flex: 1;
             }
 
             .dropdown-title {
