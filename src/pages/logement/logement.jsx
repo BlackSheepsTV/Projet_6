@@ -11,7 +11,7 @@ export default function Logement() {
 
     const params = useParams();
 
-    const logement = Logements.find((logement) =>  logement.title.replace(/[\s-]+/g, '-').toLowerCase() === params.logementName.replace(/[\s-]+/g, '-').toLowerCase());
+    const logement = Logements.find((logement) =>  logement.id === params.logementId);
 
     if(!logement) {
         return <NotFound />

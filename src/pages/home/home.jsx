@@ -12,7 +12,7 @@ export default function Home() {
 
         <div className='cards-wrapper'>
           {Logements.map((logement, index ) => (
-            <Card key={index} img={logement.cover} title={logement.title}/>
+            <Card key={index} id={logement.id} img={logement.cover} title={logement.title}/>
           ))}
         </div>
         
