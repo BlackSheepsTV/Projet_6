@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function HomeHeader({text, img}) {
   return (
         <div className="page-header">
-          <img src={img} alt="photo"/>
+          <img src={img} alt=""/>
           <p>{ text }</p>
         </div>
   );

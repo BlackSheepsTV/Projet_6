@@ -40,7 +40,7 @@ export default function Logement() {
 
                         <div className='host-wrapper'>
                             <p>{logement.host.name}</p>
-                            <img src={logement.host.picture} />
+                            <img src={logement.host.picture} alt='' />
                         </div>
 
                 </div>
